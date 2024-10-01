@@ -3,61 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Maryam Asghar</title>
+    <title>Maryam Asghar - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #F5F5DC;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
+        /* Navigation bar */
         nav {
-            background-color: #a3aaae;
-            padding: 10px;
+            background-color: #1a1a1a;
+            padding: 15px 0;
             text-align: center;
         }
         nav a {
-            margin: 0 15px;
-            color: #FFFFFF;
+            margin: 0 20px;
+            color: #ffffff;
             text-decoration: none;
             font-size: 18px;
         }
         nav a:hover {
-            color: #FFC107;
+            color: #4CAF50;
         }
+        /* Portfolio container */
         .container {
-            margin: 10px;
+            margin: 40px auto;
             padding: 20px;
-            background-color: #FFFFFF;
-            border: 1px solid #a3aaae;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 36px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
         }
         .project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
-        h1, h2 {
-            color: #000000;
+        .project img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .project-details h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .project-details p {
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
         <h1>Portfolio</h1>
+
+        <!-- Project 1 -->
         <div class="project">
-            <h2>Project 1: Cool Thing I Did</h2>
-            <a href="project1.html">View Project</a>
+            <div class="project-details">
+                <h2><a href="project1.html" style="color: #4CAF50;">Object Dictionary EDS File Handling</a></h2>
+                <p>Using Python to read and manipulate object dictionary files, with a graphical interface and batch processing from Excel sheets.</p>
+            </div>
+            <img src="images/project1.jpg" alt="Project 1">
         </div>
+
+        <!-- Project 2 -->
         <div class="project">
-            <h2>Project 2: Another Cool Thing</h2>
-            <a href="project2.html">View Project</a>
+            <div class="project-details">
+                <h2><a href="project2.html" style="color: #4CAF50;">HiSight Driver Integration</a></h2>
+                <p>Developed and integrated the HiSight driver into the system for improved performance and control.</p>
+            </div>
+            <img src="images/project2.jpg" alt="Project 2">
         </div>
-        <!-- Add more projects as needed -->
+
+        <!-- Project 3 -->
+        <div class="project">
+            <div class="project-details">
+                <h2><a href="project3.html" style="color: #4CAF50;">EEPROM and FLASH Driver Development</a></h2>
+                <p>Developed drivers for EEPROM and FLASH memory, ensuring efficiency and stability for long-term data storage.</p>
+            </div>
+            <img src="images/project3.jpg" alt="Project 3">
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project">
+            <div class="project-details">
+                <h2><a href="project4.html" style="color: #4CAF50;">IVTS Driver Development</a></h2>
+                <p>Created and optimized the IVTS driver, improving system performance and reliability.</p>
+            </div>
+            <img src="images/project4.jpg" alt="Project 4">
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project">
+            <div class="project-details">
+                <h2><a href="project5.html" style="color: #4CAF50;">Upper Body Control Strategies of Nao Robots</a></h2>
+                <p>Deployed various control strategies to test and analyze response times and safety for Nao robots.</p>
+            </div>
+            <img src="images/project5.jpg" alt="Project 5">
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project">
+            <div class="project-details">
+                <h2><a href="project6.html" style="color: #4CAF50;">Robust Multi-Stage Model Predictive Control</a></h2>
+                <p>Controlled a 2D LTI system using a robust MPC with horizon 1 and 2, exploring its effectiveness.</p>
+            </div>
+            <img src="images/project6.jpg" alt="Project 6">
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project">
+            <div class="project-details">
+                <h2><a href="project7.html" style="color: #4CAF50;">Deep Learning Based MPC Control of Double Inverted Pendulum</a></h2>
+                <p>Used deep learning and MPC models to stabilize and control a double inverted pendulum in real-time.</p>
+            </div>
+            <img src="images/project7.jpg" alt="Project 7">
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project">
+            <div class="project-details">
+                <h2><a href="project8.html" style="color: #4CAF50;">Yaw Control for Wind Turbine - Bachelor’s Thesis</a></h2>
+                <p>Implemented a control system to efficiently brake the yaw of a wind turbine, improving energy efficiency.</p>
+            </div>
+            <img src="images/project8.jpg" alt="Project 8">
+        </div>
     </div>
 </body>
 </html>

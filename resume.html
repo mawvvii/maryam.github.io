@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Maryam Asghar</title>
     <style>
+        /* General body and text settings */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #F5F5DC;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
+        /* Navigation bar styles */
         nav {
-            background-color: #a3aaae;
-            padding: 10px;
+            background-color: #1a1a1a;
+            padding: 15px 0;
             text-align: center;
         }
         nav a {
-            margin: 0 15px;
-            color: #FFFFFF;
+            margin: 0 20px;
+            color: #ffffff;
             text-decoration: none;
             font-size: 18px;
         }
         nav a:hover {
-            color: #FFC107;
+            color: #4CAF50;
         }
         .container {
             margin: 20px auto;
@@ -53,10 +56,11 @@
         .profile-info h1 {
             margin: 0;
             font-size: 28px;
-            color: #000;
+            color: #000000;
         }
         .profile-info p {
             margin: 5px 0;
+            color: #000000;
         }
         .profile-info .icons {
             display: flex;
@@ -65,18 +69,70 @@
         }
         .profile-info .icons a {
             margin-right: 15px;
-            color: #000;
+            color: #000000;
             text-decoration: none;
             font-size: 20px;
         }
+        /* Summary Section */
         .summary {
-            margin-top: 20px;
+            flex: 1;
             padding: 10px;
-            background-color: #f4f4f9;
+            background-color: #F5F5F7;
             border-left: 5px solid #a3aaae;
+            color: #000000;
+        }
+        .skills {
+            flex: 1;
+            padding: 10px;
+            background-color: #F5F5F7;
+            border-left: 5px solid #a3aaae;
+            color: #000000;
+        }
+        .experience {
+            flex: 1;
+            padding: 10px;
+            background-color: #F5F5F7;
+            border-left: 5px solid #a3aaae;
+            color: #000000;
+        }
+        .academic {
+            flex: 1;
+            padding: 10px;
+            background-color: #F5F5F7;
+            border-left: 5px solid #a3aaae;
+            color: #000000;
+        }
+        .projects {
+            flex: 1;
+            padding: 10px;
+            background-color: #F5F5F7;
+            border-left: 5px solid #a3aaae;
+            color: #000000;
+        }
+        .publications{
+            flex:1;
+            padding: 10px;
+            background-color: #F5F5F7;
+            border-left: 5px solid #a3aaae;
+            color: #000000;
+        }
+        .certifications{
+            flex:1;
+            padding: 10px;
+            background-color: #F5F5F7;
+            border-left: 5px solid #a3aaae;
+            color: #000000;    
+        }
+        .honors{
+            flex:1;
+            padding: 10px;
+            background-color: #F5F5F7;
+            border-left: 5px solid #a3aaae;
+            color: #000000;
         }
         h2 {
-            margin-top: 20px;
+            margin-top: 0;
+            color: #000000;
         }
         ul {
             padding-left: 20px;
@@ -84,7 +140,9 @@
         }
         ul li {
             margin-bottom: 10px;
+            color: #000000;
         }
+        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -93,12 +151,13 @@
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
         <!-- Profile Section -->
         <div class="profile">
-            <img src="images/your_photo.jpg" alt="Profile Picture">
+            <img src="images/itsamemario.jpeg" alt="Profile Picture">
             <div class="profile-info">
                 <h1>Maryam Asghar</h1>
                 <p>📅 24.11.1997 (26 years)</p>
@@ -117,6 +176,124 @@
             <h2><i class="fas fa-newspaper"></i> Summary</h2>
             <p>I am passionate about creating innovative projects and solutions in Embedded Software Development (5+ years), specializing in battery management systems and robotics. With my leadership skills and technical expertise, I am confident in my ability to develop and lead complex software systems that can contribute to the advancement of the industry.</p>
         </div>
+        <!-- Summary Section -->
+        <div class="skills">
+            <h2><i class="fa fa-bolt"></i> Skills</h2>
+            <p>I am passionate about creating innovative projects and solutions in Embedded Software Development (5+ years), specializing in battery management systems and robotics. With my leadership skills and technical expertise, I am confident in my ability to develop and lead complex software systems that can contribute to the advancement of the industry.</p>
+        </div>
+
+        <div class="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        
+            <h3>LION Smart GmbH - Munich, Germany</h3>
+            <p><strong>Mid-Level Embedded Software Developer and Scrum Master – Battery Management Systems</strong> (June 2024 – Present)</p>
+            <ul>
+                <li>Led a customer project, fully programming and configuring the BMS modules, including safety-critical software for lithium-ion batteries.</li>
+                <li>Designed and developed connection hardware; conducted rest bus simulation using CANalyzer for comprehensive system validation.</li>
+                <li>Performed integration testing on NXP microcontrollers, ensuring robust operation in real-time environments using CAN, I2C, and SPI communication protocols.</li>
+            </ul>
+        
+            <p><strong>Junior Embedded Software Developer – Battery Management Systems</strong> (March 2023 – June 2024)</p>
+            <ul>
+                <li>Developed embedded software modules, including device drivers for IVT-S, HSD MC33XS2410, EEPROM, and FLASH memory, using Embedded C.</li>
+                <li>Created functional specifications and software requirements in Codebeamer, and thoroughly documented the software development process.</li>
+                <li>Conducted unit tests using Tessy and executed in-depth integration tests on the target hardware to ensure reliability and safety compliance.</li>
+            </ul>
+        
+            <p><strong>Embedded Software Developer Intern – Battery Management Systems</strong> (Sep 2022 – March 2023)</p>
+            <ul>
+                <li>Assisted in the design, integration, and testing of software functions in embedded systems for lithium-ion battery management.</li>
+                <li>Developed Python scripts to optimize toolchains and improve overall software development processes.</li>
+                <li>Collaborated closely with hardware development, algorithm development, and HiL testing teams to ensure seamless integration of software and hardware components.</li>
+            </ul>
+        
+            <h3>Guardian Technologies Gmbh - Düsseldorf, Germany</h3>
+            <p><strong>Werkstudent in Embedded Systems</strong> (March 2022 – May 2022)</p>
+            <ul>
+                <li>Developed advanced hardware for Fire safety of GT Gmbh.</li>
+                <li>PCB-Design on Ki-cad and its implementation using Voltera V-one using an input Gerber file.</li>
+                <li>Printing, Drilling, and Soldering of PCB’s using Voltera V-one and then testing the created PCBs.</li>
+                <li>Conducted hardware and software co-design of Joystick Motor control.</li>
+                <li>Developed hardware prototype of the minimal value product as a proof of concept for investors.</li>
+            </ul>
+        
+            <h3>Technische Universität Dortmund - Dortmund, Germany</h3>
+            <p><strong>Wiwi – Graduate Teaching Assistant for the Courses ‘Embedded Systems’ and ‘Intro to Programming C++’</strong> (Sept. 2021 – March 2022)</p>
+            <ul>
+                <li>Support in the organization, implementation, and further development of both the courses.</li>
+                <li>Delegated weekly assignments on data flow models (KPN, SDL, SDF), Petri Nets, VHDL, Integer Linear Programming, Programming, WCET & Scheduling in the course ‘Embedded Systems’.</li>
+                <li>Assisted 30 Bachelor's students in understanding Advanced C++ topics such as Pointers, Recursion, Classes, Data Structures, Inheritance, and Virtual Methods.</li>
+            </ul>
+        </div>
+        
+        <!-- Academic Section -->
+        <div class="academic">
+            <h2><i class="fas fa-graduation-cap"></i> Academic</h2>
+
+            <h3>Technische Universität Dortmund - Dortmund, Germany</h3>
+            <p><strong>Master’s in Automation and Robotics</strong> (Ongoing, October 2020 – Present) | Current GPA: 2.6</p>
+            <p>Major: Cognitive Sciences and Robotics.</p>
+
+            <h3>Bosch – Udacity Program - Dortmund, Germany</h3>
+            <p><strong>Data Engineer for AI Applications Nanodegree Program</strong> (July 2022 – December 2022)</p>
+            <p>Subjects: Data Modelling, Cloud Data Warehouses, Spark and Data Lakes, Automate Data Pipelines, Message Passing.</p>
+
+            <h3>DHA Suffa University - Karachi, Pakistan</h3>
+            <p><strong>Bachelor’s in Electrical Engineering</strong> (August 2015 – June 2019) | GPA: 3.86 (with Distinction)</p>
+            <p>Major: Power Engineering | Thesis: A Control and Distribution of a Yaw Axis Wind Turbine</p>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+
+            <h3>“Upper body control strategies of Nao Robots” - Semester Project</h3>
+            <p>We have deployed different control strategies to test and record which strategy provides the fastest and safest response.</p>
+
+            <h3>“Robust Multi-Stage Model Predictive Control” (2022) - Advanced Process Control</h3>
+            <p>Controlling a 2D LTI system with a robust MPC with horizon 1 and 2. (Additional Credit Project)</p>
+
+            <h3>“Deep Learning Based MPC Control of Double Inverted Pendulum” (2021) - Machine Learning</h3>
+            <p>Controlling and stabilizing a double inverted pendulum using deep learning based on an MPC model. (Additional Credit Project)</p>
+
+            <h3>“Object Dictionary Reading and Manipulation” - Python Project</h3>
+            <p>Used an object dictionary EDS file and created Python scripts to read the dictionary from our system, manipulate Excel sheets to read all the object dictionaries at once, and built a graphical user interface.</p>
+
+            <h3>“HiSight Driver Integration”</h3>
+            <p>Integrated the HiSight driver for our system, ensuring seamless communication between the hardware and software layers.</p>
+
+            <h3>“EEPROM and FLASH Driver Development”</h3>
+            <p>Developed drivers for EEPROM and FLASH memory, focusing on stability and efficiency for long-term data storage and retrieval.</p>
+
+            <h3>“IVTS Driver Development”</h3>
+            <p>Developed the driver for IVTS, ensuring it met the necessary performance and reliability standards.</p>
+
+            <h3>“Dual Pendulum Control using MPC”</h3>
+            <p>Worked on controlling a dual pendulum using Model Predictive Control (MPC), focusing on real-time control and optimization.</p>
+
+            <h3>“Yaw Control for Wind Turbine” - Bachelor’s Thesis</h3>
+            <p>Focused on efficiently braking the yaw of a wind turbine using specific control values for improved energy efficiency and system stability.</p>
+        </div>
+        <!-- Publications Section -->
+        <div class="publications">
+            <h2><i class="fas fa-book"></i> Publications</h2>
+
+            <h3>“Mitigating Power Fluctuations for Energy Storage in Wind Energy Conversion System Using Supercapacitors” (2020)</h3>
+            <p>Impact Factor (IF): 3.5</p>
+
+            <h3>“Energy harvesting using kinetic energy of vehicles” (2020)</h3>
+        </div>
+
+        <!-- Honours and Awards Section -->
+        <div class="honors">
+            <h2><i class="fas fa-trophy"></i> Honours and Awards</h2>
+
+            <ul>
+                <li><strong>Vice Chancellor’s Honor List</strong> (4.0 GPA) – DHA Suffa University (2016)</li>
+                <li><strong>Dean’s Honor List</strong> (GPA greater than 3.5) – DHA Suffa University</li>
+            </ul>
+        </div>
+
 
         <!-- Experience, Academic Background, etc. follow here -->
     </div>

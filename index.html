@@ -5,80 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maryam's Portfolio</title>
     <style>
+        /* General body and text settings */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            background-color: #F5F5DC;
         }
+        /* Navigation bar styles */
         nav {
-            background-color: #a3aaae;
-            padding: 10px;
+            background-color: #1a1a1a;
+            padding: 15px 0;
             text-align: center;
         }
         nav a {
-            margin: 0 15px;
-            color: #FFFFFF;
+            margin: 0 20px;
+            color: #ffffff;
             text-decoration: none;
             font-size: 18px;
         }
         nav a:hover {
-            color: #FFC107;
+            color: #4CAF50;
         }
-        .section {
-            margin: 10px;
+        /* Container for content */
+        .container {
+            margin: 40px auto;
             padding: 20px;
-            background-color: #FFFFFF;
-            border: 1px solid #a3aaae;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1200px;
         }
-        h1 {
-            color: #000000;
+        /* Hero section (Welcome message + Download CV button) */
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
         }
-        .intro, .projects, .cv {
+        .hero h1 {
+            font-size: 48px;
             margin-bottom: 20px;
         }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #4CAF50;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+        /* Carousel for showcasing projects */
         .carousel {
             display: flex;
-            overflow-x: scroll;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-behavior: smooth;
         }
         .carousel img {
-            margin: 10px;
             max-width: 300px;
             height: auto;
+            border-radius: 10px;
+        }
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="section intro">
-        <h1>Hello, my name is Maryam</h1>
-        <p>Welcome to my portfolio! I am an embedded software developer with expertise in battery management systems, robotics, and more. Here's a quick overview of my projects.</p>
-    </div>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a skilled embedded software developer specializing in battery management systems and neural networks for edge devices.</p>
+            <button class="cta-button" onclick="window.location.href='Maryam-Resume-2024.pdf'">Download CV</button>
+        </div>
 
-    <div class="section projects">
-        <h2>Featured Projects</h2>
+        <!-- Carousel Section for Projects -->
         <div class="carousel">
             <img src="images/project1.png" alt="Project 1">
             <img src="images/project1.png" alt="Project 2">
             <img src="images/project1.png" alt="Project 3">
-            <img src="images/project1.png" alt="Project 4">
-            <img src="images/project1.png" alt="Project 5">
-            <img src="images/project1.png" alt="Project 6">
-            <img src="images/project1.png" alt="Project 7">
-            <img src="images/project1.png" alt="Project 8">
-            <img src="images/project1.png" alt="Project 9">
+            <!-- Add more images as needed -->
         </div>
     </div>
 
-    <div class="section cv">
-        <h2>My CV</h2>
-        <iframe src="Maryam-Resume-2024.pdf" width="100%" height="500px"></iframe>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Maryam Asghar. All rights reserved.</p>
+    </footer>
 </body>
 </html>

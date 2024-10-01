@@ -3,51 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Maryam Asghar</title>
+    <title>Project 1 - Object Dictionary EDS File Handling</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #F5F5DC;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
+        /* Navigation bar */
         nav {
-            background-color: #a3aaae;
-            padding: 10px;
+            background-color: #1a1a1a;
+            padding: 15px 0;
             text-align: center;
         }
         nav a {
-            margin: 0 15px;
-            color: #FFFFFF;
+            margin: 0 20px;
+            color: #ffffff;
             text-decoration: none;
             font-size: 18px;
         }
         nav a:hover {
-            color: #FFC107;
+            color: #4CAF50;
         }
+        /* Container for content */
         .container {
-            margin: 10px;
+            margin: 40px auto;
             padding: 20px;
-            background-color: #FFFFFF;
-            border: 1px solid #a3aaae;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1200px;
         }
-        h1, p {
-            color: #000000;
+        /* Two-column layout */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .description {
+            flex: 1;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+        }
+        .description h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .description p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .media {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .media img, .media video {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <div class="container">
-        <h1>Project 1: Cool Thing I Did</h1>
-        <p>This is a detailed page about the cool project I worked on.</p>
-        <!-- Add more content for this project -->
+        <!-- Two-column layout for project -->
+        <div class="two-column">
+            <!-- Project description -->
+            <div class="description">
+                <h2>Object Dictionary EDS File Handling</h2>
+                <p>In this project, I used Python to read out the object dictionary file from our system. I manipulated the data to ensure all the object dictionaries could be read at once from the Excel sheet, streamlining the process. Additionally, I developed a graphical user interface to enhance the usability of this tool.</p>
+            </div>
+            <!-- Project media (image or video) -->
+            <div class="media">
+                <img src="images/project1.jpg" alt="Project 1 Image">
+                <!-- Alternatively, you can embed a video like this:
+                <video controls>
+                    <source src="videos/project1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
