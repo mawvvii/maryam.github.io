@@ -4,83 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maryam's Portfolio</title>
-    <style>
-        /* General body and text settings */
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        /* Navigation bar styles */
-        nav {
-            background-color: #1a1a1a;
-            padding: 15px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 20px;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #4CAF50;
-        }
-        /* Container for content */
-        .container {
-            margin: 40px auto;
-            padding: 20px;
-            width: 80%;
-            max-width: 1200px;
-        }
-        /* Hero section (Welcome message + Download CV button) */
-        .hero {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .cta-button {
-            background-color: #4CAF50;
-            border: none;
-            padding: 15px 30px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .cta-button:hover {
-            background-color: #45a049;
-        }
-        /* Carousel for showcasing projects */
-        .carousel {
-            display: flex;
-            overflow-x: auto;
-            gap: 10px;
-            scroll-behavior: smooth;
-        }
-        .carousel img {
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-        /* Footer styles */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation bar -->
@@ -88,23 +12,40 @@
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I am a skilled embedded software developer specializing in battery management systems and neural networks for edge devices.</p>
-            <button class="cta-button" onclick="window.location.href='Maryam-Resume-2024.pdf'">Download CV</button>
+    <div class="welcome-section">
+        <h1 class="welcome-heading">
+            Crafting <span class="highlight">innovative solutions</span>—
+            <br>
+            one line of <span class="highlight">code</span> at a time.
+        </h1>
+        <h2 class="welcome-subtext">Welcome to my Portfolio!</h2>
+        <p class="welcome-message">My name is Maryam Asghar, a software developer currently located in the heart of technology, Munich. Always aspiring, learning, and curious about technical topics, I specialize in the embedded domain but also have a keen interest in web development, data management, ML/AI, and app development. One thing about me is that I am always willing to learn from a challenge and thrive among like-minded individuals..</p>
+    </div>
+     
+    <!-- New Rectangle Section -->
+    <div class="icon-rectangle">
+        <div class="image-container">
+            <img src="images/icons/icon1.png" alt="Icon 1" class="icon">
+            <img src="images/icons/icon2.png" alt="Icon 2" class="icon">
+            <img src="images/icons/icon3.svg" alt="Icon 3" class="icon">
+            <img src="images/icons/icon4.jpeg" alt="Icon 4" class="icon">
+            <img src="images/icons/icon5.svg" alt="Icon 5" class="icon">
+            <img src="images/icons/icon6.png" alt="Icon 6" class="icon">
+            <img src="images/icons/icon7.png" alt="Icon 7" class="icon">
+            <img src="images/icons/icon8.jpg" alt="Icon 8" class="icon">
         </div>
+    </div>
+      
 
+    <div class="container">
+        
         <!-- Carousel Section for Projects -->
         <div class="carousel">
             <img src="images/project1.png" alt="Project 1">
             <img src="images/project1.png" alt="Project 2">
             <img src="images/project1.png" alt="Project 3">
-            <!-- Add more images as needed -->
         </div>
     </div>
 
@@ -112,5 +53,6 @@
     <footer>
         <p>© 2024 Maryam Asghar. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
