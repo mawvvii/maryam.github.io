@@ -8,6 +8,11 @@ body {
     padding: 0;
 }
 
+/* Hide overflow while page loads */
+body.loading {
+    overflow: hidden;
+}
+
 /* Navigation bar styles */
 nav {
     background-color: #1a1a1a;
@@ -55,6 +60,25 @@ nav a:hover {
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
+}
+/* Heading styling */
+.pdf-heading {
+    text-align: center;
+    font-size: 30px; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and image */
+}
+/* Heading styling */
+.pdf-name {
+    text-align: center;
+    font-size: 20px; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and image */
+}
+
+/* Show heading on hover */
+.pdf-preview-wrapper:hover .pdf-heading {
+    opacity: 1;
 }
   
 /* Responsive Adjustments */
@@ -110,6 +134,8 @@ nav a:hover {
     width: 100%;
     height: 500px; /* Adjust height as needed */
     overflow: hidden;
+    margin-left: 50px ;
+    margin-right: 150px;
 }
   
 .image-container img {
@@ -140,19 +166,55 @@ nav a:hover {
     transform: scale(1.5);
 }
 
-/* Carousel for showcasing projects */
-.carousel {
+/********** PDF ***************/
+/* Container styling */
+
+.pdf-preview-container {
     display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    scroll-behavior: smooth;
+    gap: 20px; /* Space between previews */
+    justify-content: center; /* Center align the previews */
+    margin: 30px auto;
+    max-width: 30%;
+}
+ 
+.pdf-preview-wrapper {
+    position: relative;
+    display: inline-block;
 }
 
-.carousel img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
+.pdf-preview-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+/* Add an overlay effect when hovering */
+.pdf-preview-wrapper:hover .pdf-preview-image {
+    opacity: 0.3; /* Adjust the opacity level as needed */
+    transform: scale(1.05); /* Optional zoom effect */
+}
+
+/* Download icon styling */
+.download-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 36px; /* Adjust size as needed */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Show icon on hover */
+.pdf-preview-wrapper:hover .download-icon {
+    opacity: 1;
+}
+
 
 /* Footer styles */
 footer {

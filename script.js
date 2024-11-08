@@ -1,4 +1,16 @@
+// Disable scroll restoration
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+// Force scroll to top immediately
+window.scrollTo(0, 0);
+
 window.addEventListener('load', () => {
+    document.body.classList.remove('loading');
+    window.scrollTo(0, 0); // Ensure it’s at the top on load
+
+    // Your existing code
     const container = document.querySelector('.icon-rectangle');
     const images = Array.from(container.querySelectorAll('.icon'));
 
@@ -34,7 +46,6 @@ window.addEventListener('load', () => {
             img.style.left = `${randomX}px`;
             img.style.top = `${randomY}px`;
 
-            // Store the position and size of the placed image
             placedImages.push({
                 x: randomX,
                 y: randomY,
