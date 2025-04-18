@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maryam's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Resume Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body class="loading">
-
-    <!-- Navigation bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
+<body>
+  <div class="container">
+    <nav class="nav-pane">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
     </nav>
 
-    <div class="welcome-section">
-        <h1 class="welcome-heading">
-            Crafting <span class="highlight">innovative solutions</span>—
-            <br>
-            one line of <span class="highlight">code</span> at a time.
-        </h1>
-        <h2 class="welcome-subtext">Welcome to my Portfolio!</h2>
-        <p class="welcome-message">My name is Maryam Asghar, a software developer currently located in the heart of technology, Munich. Always aspiring, learning, and curious about technical topics, I specialize in the embedded domain but also have a keen interest in web development, data management, ML/AI, and app development. One thing about me is that I am always willing to learn from a challenge and thrive among like-minded individuals..</p>
-    </div>
-     
-    <!-- New Rectangle Section -->
-    <div class="icon-rectangle">
-        <div class="image-container">
-            <img src="images/icons/icon1.png" alt="Icon 1" class="icon">
-            <img src="images/icons/icon2.png" alt="Icon 2" class="icon">
-            <img src="images/icons/icon3.svg" alt="Icon 3" class="icon">
-            <img src="images/icons/icon4.jpeg" alt="Icon 4" class="icon">
-            <img src="images/icons/icon5.svg" alt="Icon 5" class="icon">
-            <img src="images/icons/icon6.png" alt="Icon 6" class="icon">
-            <img src="images/icons/icon7.png" alt="Icon 7" class="icon">
-            <img src="images/icons/icon8.jpg" alt="Icon 8" class="icon">
-        </div>
-    </div>
-      
-    <h3 class="pdf-heading">Quick Downloads!</h3>
-    <div class="pdf-preview-container">
-        <!-- First PDF Preview -->
-        
-        <div class="pdf-preview-wrapper">
-            <img src="images/cvimage.PNG" alt="PDF Preview" class="pdf-preview-image">
-            <a href="images/Maryam Asghar 2024 Resume.pdf" download class="download-icon">
-                <i class="fas fa-download"></i>
-            </a>
-            <h3 class="pdf-name">Resume</h3>
-        </div>
-        
-        <!-- Second PDF Preview -->
-        <div class="pdf-preview-wrapper">
-            <img src="images/cvimage.PNG" alt="PDF Preview" class="pdf-preview-image">
-            <a href="images/YourSecondPDF.pdf" download class="download-icon">
-                <i class="fas fa-download"></i>
-            </a>
-            <h3 class="pdf-name">Portfolio</h3>
-        </div>
-    </div>
-    
+    <main class="main-content">
+      <section class="hero-section">
+        <h1 class="heading">About Me </h1>
+        <p>I'm Maryam Asghar, a mid-level embedded software developer currently working at LION Smart GmbH in Munich. 
+          I hold a Master’s degree in Automation and Robotics from TU Dortmund, 
+          with specialization in Cognitive Sciences and Robotics. My strengths lie in embedded systems, 
+          real-time programming, and AI/ML deployment on edge devices.</p>
+        <p>In addition to low-level systems, I have hands-on experience with deep neural network (DNN) 
+          inference and development, and I’m also proficient in building responsive websites and mobile applications.</p>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Maryam Asghar. All rights reserved.</p>
+      <section class="projects-section">
+        <h1 class="heading heading-light">Projects Overview</h1>
+      
+        <div class="projects-wrapper">
+          <div class="projects-row top-row">
+            <a href="portfolio.html#adaptive-dnn" class="project-box">Adaptive-Reliable DNN (Thesis)</a>
+            <a href="portfolio.html#thyroid-ai" class="project-box">Thyroid Helping Website</a>
+            <a href="portfolio.html#portfolio" class="project-box">Portfolio Website</a>
+            <a href="portfolio.html#mpc-pendulum" class="project-box">DL-MPC – Double Pendulum</a>
+          </div>
+          <div class="projects-row bottom-row">
+            <a href="portfolio.html#joystick-control" class="project-box">2D Joystick Motor Control</a>
+            <a href="portfolio.html#nao-control" class="project-box">Nao Robot Strategies</a>
+            <a href="portfolio.html#multi-stage-mpc" class="project-box">Robust MPC</a>
+            <a href="portfolio.html#yaw-control" class="project-box">Yaw Control (Bachelor Thesis)</a>
+          </div>
+        </div>
+      </section>                                    
+
+
+      <section class="downloads-section">
+        <h1 class="heading">Take Me With You ...</h1>
+      
+        <div class="downloads-wrapper">
+          <!-- Resume -->
+          <div class="download-card">
+            <img src="/images/resume-preview.png" alt="Resume Preview" class="download-preview" />
+            <a href="/images/Maryam Asghar 2024 Resume.pdf" download class="download-overlay">
+              <i class="fas fa-download"></i>
+            </a>
+            <p class="download-label">My Experience, Summed Up</p>
+          </div>
+      
+          <!-- Portfolio Snapshot -->
+          <div class="download-card">
+            <img src="/images/resume-preview.png" alt="Portfolio Preview" class="download-preview" />
+            <a href="portfolio.pdf" download class="download-overlay">
+              <i class="fas fa-download"></i>
+            </a>
+            <p class="download-label">
+              <i class="fas fa-folder-open"></i> Portfolio at a Glance
+            </p>
+          </div>          
+        </div>
+      </section>
+           
+    <footer class="footer-container">
+      <div class="footer-socials">
+        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2025 Maryam A. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+      
+  </div>
 </body>
 </html>
